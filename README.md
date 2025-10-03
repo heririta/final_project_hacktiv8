@@ -1,3 +1,6 @@
+<img width="950" height="497" alt="image" src="https://github.com/user-attachments/assets/1a232ca1-e27d-4377-b236-6691ca311232" />
+
+
 # 🤖 Document Chatbot with RAG
 
 A powerful document chatbot application built with Streamlit, LangChain, LangGraph, FAISS, and Gemini API. This app allows you to upload documents and chat with them using AI-powered Retrieval-Augmented Generation (RAG).

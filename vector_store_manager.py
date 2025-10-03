@@ -9,7 +9,6 @@ import numpy as np
 import pandas as pd
 from langchain.schema import Document as LangchainDocument
 from langchain_cohere import CohereEmbeddings
-from langchain_google_genai import GoogleGenerativeAIEmbeddings
 
 from config import Config
 from database import db

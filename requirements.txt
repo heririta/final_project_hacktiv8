@@ -15,4 +15,4 @@ typing-extensions>=4.5.0
 pytesseract>=0.3.13
 google-generativeai>=0.8.0
 cohere>=5.0.0
-langchain-google-genai
+langchain_google_genai

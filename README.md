@@ -1,6 +1,6 @@
 # 🤖 Document Chatbot with RAG
 
-A powerful document chatbot application built with Streamlit, LangChain, LangGraph, FAISS, and Groq API. This app allows you to upload documents and chat with them using AI-powered Retrieval-Augmented Generation (RAG).
+A powerful document chatbot application built with Streamlit, LangChain, LangGraph, FAISS, and Gemini API. This app allows you to upload documents and chat with them using AI-powered Retrieval-Augmented Generation (RAG).
 
 ## ✨ Features
 
@@ -44,23 +44,19 @@ cp .env.example .env
 
 2. Edit `.env` and add your API keys:
 ```env
-GROQ_API_KEY=your_groq_api_key_here
-EMBEDDING_MODEL=embed-multilingual-v3.0
-LLM_MODEL=llama3-8b-8192
+GOOGLE_API_KEY=AIzaSyD0J47YWxp6ZbyAl0bKEep4N2hCfZFInMk
+LLM_MODEL=gemini-2.0-flash
 CHUNK_SIZE=1000
 CHUNK_OVERLAP=200
 MAX_TOKENS=4000
-TEMPERATURE=0.7
-```
+TEMPERATURE=0.1
+DB_PATH=chatbot.db
+VECTOR_STORE_PATH=vector_store```
 
 ### 3. Get API Keys
 
-**Groq API Key:**
-1. Visit [Groq Console](https://console.groq.com/)
-2. Sign up or log in
-3. Navigate to API Keys section
-4. Create a new API key
-5. Copy the key to your `.env` file
+**Gemini API Key:**
+1. Visit [Gemini Console](https://aistudio.google.com/)
 
 
 ### 4. Run the Application
@@ -97,7 +93,7 @@ document-chatbot-rag/
 - **Frontend**: Streamlit
 - **Backend**: Python, LangChain, LangGraph
 - **Vector Database**: FAISS
-- **LLM**: Groq API (Llama models)
+- **LLM**: Gemini API 
 - **Database**: SQLite
 - **Document Processing**: PyPDF2, python-docx, pandas, PIL
 
@@ -227,9 +223,9 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - [Streamlit](https://streamlit.io/) for the amazing web framework
 - [LangChain](https://langchain.com/) for the LLM orchestration
-- [Groq](https://groq.com/) for fast LLM inference
+- [Gemini](https://aistudio.google.com/) for fast LLM inference
 - [FAISS](https://faiss.ai/) for efficient similarity search
-- [HuggingFace](https://huggingface.co/) for embedding models
+
 
 ## 📞 Support
 

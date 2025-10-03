@@ -7,7 +7,7 @@ A powerful document chatbot application built with Streamlit, LangChain, LangGra
 
 ## ✨ Features
 
-- 📄 **Multi-format Document Support**: PDF, DOCX, TXT, MD, Excel, CSV, and Images (with OCR)
+- 📄 **Multi-format Document Support**: PDF, DOCX, TXT, MD
 - 💬 **Intelligent Chat Interface**: Context-aware conversations with document references
 - 🔍 **RAG Pipeline**: Advanced retrieval-augmented generation using FAISS vector store
 - 🌍 **Multilingual Support**: Multilingual embedding model for better language understanding

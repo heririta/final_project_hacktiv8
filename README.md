@@ -7,7 +7,7 @@ A powerful document chatbot application built with Streamlit, LangChain, LangGra
 - 📄 **Multi-format Document Support**: PDF, DOCX, TXT, MD, Excel, CSV, and Images (with OCR)
 - 💬 **Intelligent Chat Interface**: Context-aware conversations with document references
 - 🔍 **RAG Pipeline**: Advanced retrieval-augmented generation using FAISS vector store
-- 🌍 **Multilingual Support**: Cohere's multilingual embedding model for better language understanding
+- 🌍 **Multilingual Support**: Multilingual embedding model for better language understanding
 - 🧠 **Memory Management**: Persistent chat history and user memory
 - 📊 **Analytics Dashboard**: Detailed usage statistics and document insights
 - 🎯 **Reference Display**: Source citations for AI responses
@@ -45,7 +45,6 @@ cp .env.example .env
 2. Edit `.env` and add your API keys:
 ```env
 GROQ_API_KEY=your_groq_api_key_here
-COHERE_API_KEY=your_cohere_api_key_here
 EMBEDDING_MODEL=embed-multilingual-v3.0
 LLM_MODEL=llama3-8b-8192
 CHUNK_SIZE=1000
@@ -63,12 +62,6 @@ TEMPERATURE=0.7
 4. Create a new API key
 5. Copy the key to your `.env` file
 
-**Cohere API Key:**
-1. Visit [Cohere Dashboard](https://dashboard.cohere.com/)
-2. Sign up or log in
-3. Navigate to API Keys section
-4. Create a new API key
-5. Copy the key to your `.env` file
 
 ### 4. Run the Application
 
@@ -105,7 +98,6 @@ document-chatbot-rag/
 - **Backend**: Python, LangChain, LangGraph
 - **Vector Database**: FAISS
 - **LLM**: Groq API (Llama models)
-- **Embeddings**: Cohere Multilingual (embed-multilingual-v3.0)
 - **Database**: SQLite
 - **Document Processing**: PyPDF2, python-docx, pandas, PIL
 
@@ -190,7 +182,7 @@ pytesseract>=0.3.10
 ### Common Issues
 
 1. **API Key Errors**
-   - Ensure both Groq and Cohere API keys are valid in `.env`
+   - Ensure both Gemini API keys are valid in `.env`
    - Check if you have sufficient quota
 
 2. **Document Processing Failed**
@@ -208,7 +200,7 @@ pytesseract>=0.3.10
    - Use smaller documents for testing
 
 5. **Multilingual Support**
-   - The app supports over 100 languages with Cohere's multilingual model
+   - The app supports over 100 languages with Multilingual model
    - For best results, use documents with consistent language per document
    - Mixed-language documents are also supported
 

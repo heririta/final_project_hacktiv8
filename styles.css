@@ -1,0 +1,549 @@
+/* Clean, minimal UI CSS with subtle colors */
+
+/* Import clean fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Segoe+UI:wght@300;400;500;600&display=swap');
+
+/* General Styling */
+.stApp {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 50%, #f8f9fa 100%);
+    font-family: 'Segoe UI', 'Inter', system-ui, sans-serif;
+}
+
+/* Main Headers */
+.main-header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(44, 62, 80, 0.1);
+}
+
+/* Sidebar Styling */
+.css-1d391kg {
+    background: #ffffff;
+    border-right: 1px solid #e9ecef;
+}
+
+.css-17eq0hr {
+    background: rgba(255,255,255,0.98);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Enhanced Document Cards */
+.document-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fffa 100%);
+    padding: 1.5rem;
+    border-radius: 20px;
+    border: 2px solid #e8f5e8;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 32px rgba(76, 175, 80, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.document-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #4CAF50, #8BC34A, #CDDC39);
+    transition: height 0.3s ease;
+}
+
+.document-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(76, 175, 80, 0.15);
+    border-color: #4CAF50;
+}
+
+.document-card:hover::before {
+    height: 6px;
+}
+
+/* Document Card Preview Section */
+.document-preview {
+    background: linear-gradient(135deg, #f5f5f5 0%, #fafafa 100%);
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 1rem 0;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.document-preview:hover {
+    background: linear-gradient(135deg, #eeeeee 0%, #f5f5f5 100%);
+    border-color: #d0d0d0;
+}
+
+/* Document Status Badge */
+.status-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.status-badge.processed {
+    background: linear-gradient(135deg, #4CAF50, #8BC34A);
+    color: white;
+}
+
+.status-badge.processing {
+    background: linear-gradient(135deg, #FF9800, #FFC107);
+    color: white;
+}
+
+.status-badge:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* Document Icon Container */
+.document-icon {
+    background: linear-gradient(135deg, #4CAF50 0%, #8BC34A 100%);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.3);
+    transition: all 0.3s ease;
+}
+
+.document-icon:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
+}
+
+/* Document Info Cards */
+.info-card {
+    background: linear-gradient(135deg, rgba(76, 175, 80, 0.08) 0%, rgba(139, 195, 74, 0.08) 100%);
+    padding: 1rem;
+    border-radius: 12px;
+    border: 1px solid rgba(76, 175, 80, 0.2);
+    transition: all 0.3s ease;
+}
+
+.info-card:hover {
+    background: linear-gradient(135deg, rgba(76, 175, 80, 0.12) 0%, rgba(139, 195, 74, 0.12) 100%);
+    border-color: rgba(76, 175, 80, 0.3);
+    transform: translateY(-2px);
+}
+
+.info-card.blue {
+    background: linear-gradient(135deg, rgba(33, 150, 243, 0.08) 0%, rgba(3, 169, 244, 0.08) 100%);
+    border-color: rgba(33, 150, 243, 0.2);
+}
+
+.info-card.blue:hover {
+    background: linear-gradient(135deg, rgba(33, 150, 243, 0.12) 0%, rgba(3, 169, 244, 0.12) 100%);
+    border-color: rgba(33, 150, 243, 0.3);
+}
+
+/* Document Tags */
+.document-tag {
+    background: rgba(76, 175, 80, 0.1);
+    color: #4CAF50;
+    padding: 0.25rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.document-tag:hover {
+    background: rgba(76, 175, 80, 0.2);
+    transform: scale(1.05);
+}
+
+.document-tag.blue {
+    background: rgba(33, 150, 243, 0.1);
+    color: #2196F3;
+}
+
+.document-tag.blue:hover {
+    background: rgba(33, 150, 243, 0.2);
+}
+
+/* Chat Messages */
+.chat-message {
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    max-width: 80%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.user-message {
+    background: #007bff;
+    color: white;
+    margin-left: auto;
+    text-align: right;
+    border-bottom-right-radius: 4px;
+}
+
+.assistant-message {
+    background: #f8f9fa;
+    color: #495057;
+    border: 1px solid #e9ecef;
+    border-bottom-left-radius: 4px;
+}
+
+/* Reference Box */
+.reference-box {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-left: 3px solid #007bff;
+    border-radius: 6px;
+    padding: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* Insight Box */
+.insight-box {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-left: 3px solid #28a745;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 0.5rem 0;
+}
+
+/* Stats Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.stat-card {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border-color: #ced4da;
+}
+
+/* Buttons */
+.stButton > button {
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.25);
+}
+
+.stButton > button:hover {
+    background: #0056b3;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.35);
+}
+
+/* Enhanced Document Card Buttons */
+.document-card .stButton > button {
+    font-weight: 600;
+    padding: 0.75rem;
+    width: 100%;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    border: none;
+    font-size: 0.9rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.document-card .stButton > button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+}
+
+.document-card .stButton > button:hover::before {
+    left: 100%;
+}
+
+/* Chat Button - Green Gradient */
+.document-card .stButton > button[title*="Chat"],
+.document-card .stButton > button[aria-label*="Chat"] {
+    background: linear-gradient(135deg, #4CAF50 0%, #8BC34A 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+}
+
+.document-card .stButton > button[title*="Chat"]:hover,
+.document-card .stButton > button[aria-label*="Chat"]:hover {
+    background: linear-gradient(135deg, #45a049 0%, #7cb342 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+}
+
+/* Info Button - Blue Gradient */
+.document-card .stButton > button[title*="Info"],
+.document-card .stButton > button[title*="Detail"],
+.document-card .stButton > button[aria-label*="Info"],
+.document-card .stButton > button[aria-label*="Detail"] {
+    background: linear-gradient(135deg, #2196F3 0%, #03A9F4 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
+}
+
+.document-card .stButton > button[title*="Info"]:hover,
+.document-card .stButton > button[title*="Detail"]:hover,
+.document-card .stButton > button[aria-label*="Info"]:hover,
+.document-card .stButton > button[aria-label*="Detail"]:hover {
+    background: linear-gradient(135deg, #1976D2 0%, #0288D1 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(33, 150, 243, 0.4);
+}
+
+/* Delete Button - Red Gradient */
+.document-card .stButton > button[title*="Delete"],
+.document-card .stButton > button[title*="Hapus"],
+.document-card .stButton > button[aria-label*="Delete"],
+.document-card .stButton > button[aria-label*="Hapus"] {
+    background: linear-gradient(135deg, #f44336 0%, #e91e63 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(244, 67, 54, 0.3);
+}
+
+.document-card .stButton > button[title*="Delete"]:hover,
+.document-card .stButton > button[title*="Hapus"]:hover,
+.document-card .stButton > button[aria-label*="Delete"]:hover,
+.document-card .stButton > button[aria-label*="Hapus"]:hover {
+    background: linear-gradient(135deg, #d32f2f 0%, #c2185b 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(244, 67, 54, 0.4);
+}
+
+/* Processing/Disabled Button */
+.document-card .stButton > button:disabled {
+    background: linear-gradient(135deg, #9E9E9E 0%, #757575 100%);
+    color: white;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0.7;
+}
+
+.document-card .stButton > button:disabled::before {
+    display: none;
+}
+
+/* Button Ripple Effect */
+@keyframes ripple {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+.document-card .stButton > button:active {
+    transform: scale(0.98);
+}
+
+/* Button Focus Styles */
+.document-card .stButton > button:focus {
+    outline: 2px solid rgba(76, 175, 80, 0.5);
+    outline-offset: 2px;
+}
+
+/* Secondary Buttons */
+.stButton > button[kind="secondary"] {
+    background: #6c757d;
+    box-shadow: 0 2px 8px rgba(108, 117, 125, 0.25);
+}
+
+/* Danger Buttons */
+.stButton > button[kind="danger"] {
+    background: #dc3545;
+    box-shadow: 0 2px 8px rgba(220, 53, 69, 0.25);
+}
+
+/* File Uploader */
+.stFileUploader {
+    background: #ffffff;
+    border: 2px dashed #ced4da;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.stFileUploader:hover {
+    border-color: #6c757d;
+}
+
+/* Chat Input */
+.stChatInput {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border: 1px solid #e9ecef;
+}
+
+.stChatInput:focus-within {
+    border-color: #007bff;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.15);
+}
+
+/* Metrics */
+.stMetric {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border: 1px solid #e9ecef;
+}
+
+/* Success Messages */
+.stSuccess {
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 6px;
+    padding: 1rem;
+    color: #155724;
+}
+
+/* Error Messages */
+.stError {
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 6px;
+    padding: 1rem;
+    color: #721c24;
+}
+
+/* Warning Messages */
+.stWarning {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 6px;
+    padding: 1rem;
+    color: #856404;
+}
+
+/* Info Messages */
+.stInfo {
+    background: #d1ecf1;
+    border: 1px solid #bee5eb;
+    border-radius: 6px;
+    padding: 1rem;
+    color: #0c5460;
+}
+
+/* Simple Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Loading Spinner */
+.stSpinner {
+    color: #007bff;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f8f9fa;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ced4da;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #adb5bd;
+}
+
+/* Input Fields */
+.stTextInput > div > div > input,
+.stTextArea > div > div > textarea {
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.stTextInput > div > div > input:focus,
+.stTextArea > div > div > textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.1);
+}
+
+/* Select Box */
+.stSelectbox > div > div {
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+    background: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .main-header {
+        padding: 1.5rem;
+    }
+
+    .document-card {
+        padding: 1rem;
+    }
+
+    .stat-card {
+        padding: 1rem;
+    }
+}
+
+/* Focus Outlines */
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 1px;
+}

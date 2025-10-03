@@ -1,4 +1,4 @@
-<img width="950" height="497" alt="image" src="https://github.com/user-attachments/assets/1a232ca1-e27d-4377-b236-6691ca311232" />
+<img width="2599" height="1400" alt="image" src="https://github.com/user-attachments/assets/131f4888-86bc-4d35-835d-dc94032b1ce4" />
 
 
 # 🤖 Document Chatbot with RAG
